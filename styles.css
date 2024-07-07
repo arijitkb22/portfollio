@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Body Styling */
+body {
+  /* background-color: #110114;
+   */
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+
+  /* background: linear-gradient(
+    320deg,
+    rgba(0, 140, 255, 0.678),
+    rgba(128, 0, 128, 0.308)
+  ); */
+  background-color: #09000a;
+  color: rgb(121, 4, 139);
+}
+
+/* Nav ba design  */
+.nav-bar {
+  height: 20px;
+  width: 100%;
+  position: fixed;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  background-image: url(./images/profile-pic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.navigation {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -2px 3px 4px 0px #1d2325;
+  z-index: 999;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.nav-option a {
+  text-decoration: none;
+  display: inline;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.nav-option a:hover {
+  color: white;
+}
+
+.intro {
+  position: relative;
+  top: 30px;
+  margin: 10px;
+  margin-left: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro-info {
+  align-content: center;
+}
+
+.info-image {
+  z-index: -1;
+  margin-right: 250px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.skill {
+  margin: 5px;
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+  background: rgba(59, 81, 81, 0.4);
+  height: 150px;
+  width: 120px;
+  text-align: center;
+  box-shadow: -3px 2px 6px 0 black;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.skill-heading {
+  padding-top: 15px;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.skill-details {
+  padding: 0;
+  font-size: 10px;
+}
+
+#python {
+  color: rgb(168 155 54);
+}
+
+#javascript {
+  color: rgb(251 212 36);
+}
+
+#html {
+  color: rgb(234 117 70);
+}
+
+#css {
+  color: rgb(47 103 209);
+}
+
+#react {
+  color: rgb(0 204 255);
+}
+
+#ember {
+  color: rgb(226 74 50);
+}
+
+#selenium {
+  color: mintcream;
+}
+
+#webdriver {
+  color: orange;
+}
+
+.projects {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 200px;
+  height: 300px;
+  border: 0.5px solid rgb(105, 14, 135);
+  margin: 10px;
+  text-align: center;
+  box-shadow: -3px 2px 6px 0 black;
+  border-radius: 5%;
+  background: linear-gradient(315deg, #034564, #640325);
+}
+.proj-name {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+  border: 0.5px solid rgb(153, 14, 228);
+  padding: 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: small;
+
+  a {
+    color: #edf7f1;
+  }
+}
+
+.proj-name:hover {
+  cursor: pointer;
+  color: #133f4e;
+}
+
+.proj-desc {
+  width: 90%;
+  height: 70%;
+  margin-top: 8%;
+  border: 0.5px solid rgb(146, 59, 165);
+  border-radius: 10%;
+  display: inline-block;
+}
+.desc-text {
+  position: absolute;
+  width: 100px;
+  left: 250px;
+  display: none;
+}
+
+.proj-img {
+  height: 210px;
+  width: 175px;
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.proj-img:hover {
+  display: none;
+  .desc-text1 {
+    z-index: 2;
+    display: block;
+  }
+}
+
+.skill-used {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.proj-skill {
+  height: 15px;
+  width: 60px;
+  margin: 2%;
+  margin-bottom: 0;
+  padding: 2%;
+  border: 0.5px solid rgb(165, 20, 202);
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  margin: 10px;
+  color: #a113f4;
+}
+.contact-icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  color: #1bd9dd;
+}
+
+.section-heading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.skill-bar {
+  width: 60px;
+  height: 5px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.progress-bar {
+  width: 80%;
+  height: 100%;
+  /* background: linear-gradient(
+    180deg,
+    rgba(53, 149, 227, 0.692),
+    rgba(102, 4, 102, 0.717)
+  ); */
+  background: #07c94c;
+  border-radius: 10px;
+  animation: skillLoad 2s ease-in 1s 1 alternate;
+}
+
+@keyframes skillLoad {
+  0% {
+    width: 0%;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+/* Experiance Page */
+
+.work-details {
+  text-align: center;
+  margin: 20px;
+}
+
+.my-work {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  height: 450px;
+  width: 80%;
+  padding: 20px;
+}
+.left {
+  width: 30%;
+  /* align-self: left; */
+}
+.right {
+  /* align-self: left; */
+
+  width: 70%;
+  li {
+    text-align: start;
+    line-height: 2;
+  }
+}
+
+.break-exp {
+  width: 20%;
+  margin: auto;
+  border-color: #9f0eee;
+}
+
+.aurora-theaming-details,
+.aurora-theaming {
+  margin: 10px;
+  height: 100px;
+}
+
+/* .aurora-theaming {
+  margin: 10px;
+  height: 100px;
+} */
+
+.ui-dev-details {
+  margin: 10px;
+  height: 260px;
+}
+.ui-devlopement {
+  margin-top: 80px;
+  height: 190px;
+}
+
+.test-automation,
+.test-automation-details {
+  margin: 10px;
+  height: 200px;
+}
+
+.my-internship {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  height: 250px;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Project Page */
+
+.project-sec {
+  display: flex;
+  /* justify-content: center; */
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.project-view {
+  height: 300px;
+  width: 500px;
+  /* border: 1px solid red; */
+}
+
+.project-view:hover {
+  box-shadow: -5px 6px 19px 3px rgb(130 40 199);
+  opacity: 0.8;
+  .demo-btn {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.demo-btn {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  height: 25px;
+  width: 80px;
+  color: #dd787a;
+  background: linear-gradient(
+    375deg,
+    rgba(16, 131, 225, 0.692),
+    rgba(183, 6, 183, 0.717)
+  );
+  border: 2px solid #640325;
+  border-radius: 10px;
+  display: none;
+}
+
+.demo-btn:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.proj-image {
+  position: absolute;
+  height: 300px;
+  width: 500px;
+}
